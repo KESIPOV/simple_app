@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta charset="UTF-8">
+
+		<title>SimpleApp</title>
+
+		
+<script id="sap-ui-bootstrap"
+			src="../../resources/sap-ui-core.js"
+			data-sap-ui-libs="sap.m"
+			data-sap-ui-theme="sap_belize"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-resourceroots='{"com.simple.SimpleApp": "./"}'>
+		</script>
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<script>
+		sap.ui.getCore().attachInit(function () {
+            sap.ui.xmlview({
+               viewName : "com.simple.SimpleApp.view.View1"
+            }).placeAt("content");
+         });
+         
+			// sap.ui.getCore().attachInit(function() {
+			// 	new sap.m.Shell({
+			// 		app: new sap.ui.core.ComponentContainer({
+			// 			height : "100%",
+			// 			name : "com.simple.SimpleApp"
+			// 		})
+			// 	}).placeAt("content");
+				
+			// 	var app = new sap.m.App("HelloWorld", { 
+			// 		  initialPage : "Page1"
+			// 		});
+			//     // create the first page
+			var page1 = new sap.m.Page("page1", {
+				title : "Hello World",
+				showNavButton : false,
+				content : new sap.m.Button({
+					text : "Go to Page 2",
+					press : function () {
+						// navigate to page2
+						app.to("page2");
+					}
+				})
+			// });
+			// // create the second page with a back button
+			// var page2 = new sap.m.Page("page2", {
+			// 	title : "Hello Page 2",
+			// 	showNavButton : true,
+			// 	navButtonPress : function () {
+			// 		// go back to the previous page
+			// 		app.back();
+			// 	}
+			// });
+			// // add both pages to the app
+			// app.addPage(page1).addPage(page2);
+			// // place the app into the HTML document
+			// app.placeAt("content");
+            });
+		</script>
+	</head>
+
+	<body class="sapUiBody" id="content">
+	</body>
+
+</html>
