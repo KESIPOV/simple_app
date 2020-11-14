@@ -7,6 +7,10 @@ sap.ui.define([
       
       toPage2: function(){
       	sap.ui.getCore().byFieldGroupId("idAppControl").to("page2");
+      },
+      
+      method1: function(){
+      	var a = 1;
       }
 	});
 });
