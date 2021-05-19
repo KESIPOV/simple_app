@@ -1,32 +1,31 @@
 {
     "application": {
         "id": "",
-        "title": "com.simple.SimpleApp.SimpleApp",
-        "description": "Test Simple Application",
+        "title": "com.simple.SimpleApp.simpleapp",
         "type": "SAP_UI5_Component",
         "componentUrl": "/",
-        "appUrl": "#SimpleApp-Display",
+        "appUrl": "#simpleapp-Display",
         "navigationComponentName": "com.simple.SimpleApp",
-        "intentSemanticObject": "SimpleApp",
+        "intentSemanticObject": "simpleapp",
         "intentAction": "Display",
         "html5ApplicationName": "simpleapp",
         "HCPParentApplicationName": ""
     },
     "assignment": {
         "groups": [
-            "d4871a78-3fa8-4cc7-95ef-9c98817d9bf1"
+            "242458df-1553-4c8d-90cf-0ab0419a1b87"
         ],
         "contentPackages": [
-            "627ac1b3-d53e-4c6b-b176-5d7f0dffd76c"
+            "fde3eddc-1537-4dc8-a990-3ab1668ca0e8"
         ],
         "categories": []
     },
     "tile": {
         "type": "StaticTile",
-        "title": "Simple App",
-        "subtitle": "",
-        "searchKeywords": "Simple App,",
-        "displayIconUrl": "sap-icon://hello-world",
+        "title": "Title",
+        "subtitle": "Subtitle",
+        "searchKeywords": "Title,Subtitle",
+        "displayIconUrl": "sap-icon://approvals",
         "displayInfoText": "",
         "size": "1x1",
         "serviceURL": "",

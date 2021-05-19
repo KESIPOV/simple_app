@@ -1,10 +1,18 @@
 <mvc:View controllerName="com.simple.SimpleApp.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
-	displayBlock="true" xmlns="sap.m">
-	<App id="idAppControl">
+	displayBlock="true" xmlns="sap.m" xmlns:core="sap.ui.core">
+	<App id="idAppControl" class="myApp">
 		<pages>
 			<Page id="Page1" title="Hello World" showNavButton="false">
+				<customHeader>
+					<Bar>
+						<contentLeft>
+							<core:ComponentContainer id="panelCompContainer" propagateModel="true"/>
+						</contentLeft>
+					</Bar>
+				</customHeader>
 				<content>
-					<Button text="Go to Page 2" press="toPage2"></Button>
+					<Button text="Open Popup From Library" press="openPopUp" visible="{= !${globalModel>/Hide} }" class="myButton"></Button>
+					<!--<core:ComponentContainer id="panelCompContainer" propagateModel="true"/>-->
 				</content>
 			</Page>
 		</pages>

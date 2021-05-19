@@ -44,7 +44,13 @@
 			"libs": {
 				"sap.ui.layout": {},
 				"sap.ui.core": {},
-				"sap.m": {}
+				"sap.m": {},
+				"com.md.library": {}
+			},
+			"components": {
+				"com.md.library.comp.embeddedpanel": {
+					"minVersion": ""
+				}
 			}
 		},
 		"contentDensities": {

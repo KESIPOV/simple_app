@@ -17,6 +17,13 @@ sap.ui.define([
 		 * @override
 		 */
 		init: function () {
+			var urlParameter = this.getComponentData();
+			if (urlParameter.startupParameters) {
+				if (urlParameter.startupParameters["Name"]) {
+					this.getComponentData().Name = urlParameter.startupParameters["Name"][0];
+				}
+			}
+
 			// call the base component's init function
 			UIComponent.prototype.init.apply(this, arguments);
 

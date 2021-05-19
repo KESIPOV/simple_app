@@ -18,7 +18,16 @@
         "entryPath": "/test-resources"
       },
       "description": "SAPUI5 Test Resources"
-    }
+    },
+     {
+		"path": "/resources/com/md/library",
+		"target": {
+			"type": "application",
+			"name": "library",
+			"entryPath": "/"
+		},
+		"description": "Library"
+	}
   ],
   "sendWelcomeFileRedirect": true
 }
